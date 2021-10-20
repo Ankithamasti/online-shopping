@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration and login page</title>
+<link rel="stylesheet" href="C:\Users\ankit\Desktop\front-end\all in one.css">
+<style>
+body{
+background-image:url(bc6.jpg);
+
+}
+</style>
+</head>
+<body>
+
+<div class="container1">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+<h2>LOGIN</h2>
+<form>
+
+<input type="email" class="input-box" placeholder="Your Email Id" required>
+<input type="password" class="input-box" placeholder="Password" required>
+<input type="checkbox"><span>Remember Me</span>
+<button type="button" class="btn" onclick="openRegister()">I Am New Here</button>
+</form>
+<a href="C:\Users\ankit\Desktop\front-end\food.html"><button type="button" class="btn" onclick="openRegister()">submit</button></a>
+<a href="#">Forgot Password</a>
+
+</div>
+<div class="card-back">
+<h2>REGISTER</h2>
+<form>
+<input type="text" class="input-box" placeholder="Your Name" required>
+<input type="email" class="input-box" placeholder="Your Email Id" required>
+<input type="password" class="input-box" placeholder="Password" required>
+<input type="checkbox"><span>Remember Me</span>
+</form>
+<button type="button" class="btn" onclick="openLogin()">have an account</button></a>
+<button type="button" class="btn" onclick="openLogin()">submit</button>
+<a href="#">Forgot Password</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+var card=document.getElementById("card");
+function openRegister(){
+card.style.transform="rotatey(-180deg)";
+}
+
+function openLogin(){
+card.style.transform="rotatey(-0deg)";
+}
+
+
+</script>
+</body>
+</html>
